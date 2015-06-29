@@ -6,13 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 
-<!-- Bootstrap -->
+<!-- CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/imepp.css" rel="stylesheet">
 
 </head>
 <body>
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
@@ -22,7 +23,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img style="height:auto; width:auto; max-height:30px;" alt="IME++" src="images/im07.png">
+                <img style="height:auto; width:auto; max-height:30px;" alt="IME++ Home" src="images/im07.png">
             </a>
         </div>
 
@@ -32,15 +33,15 @@
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Portifólio</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grupos <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Grupos <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Maratona de Programação</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">Desenvolvimento de Jogos</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">Desenvolvimento de Sistemas</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,16 +49,54 @@
                 <li><a href="#">Wiki</a></li>
                 <li><a href="#">Fórum</a></li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
 
-<main role="main" class=container>
-    <h1><img style="max-width: 30%;" class="img-responsive center-block" alt="IME++" src="images/logo_tr_cn.png"></h1>
-    <p class="text-center">A IME++ é uma iniciativa de alunos do Instituto Militar de Engenharia. Visa incentivar o estudo e o compartilhamento do conhecimento em computação no instituto, além de oferecer um complemento a formação dos engenheiros com grupos de estudo e projetos.</p>
-    <h2>Competições</h2>
-    <h2>Projetos</h2>
-    <h2>Propostas</h2>
+<main role="main" class="container-fluid">
+    <header>
+        <img style="max-width: 30%;" class="img-responsive center-block" alt="IME++ Logo" src="images/logo_tr_cn.png">
+        <h1 class="text-center">Uma comunidade para o compartilhamento e a construção de conhecimento na área de computação.</h1>
+        <p class="text-justify">A IME++ é uma iniciativa de alunos do Instituto Militar de Engenharia que procura unir pessoas que tenham interesses em comum e estimular o trabalho em conjunto. Acreditamos em direcionar e facilitar a construção do conhecimento, seja facilitando e guiando o acesso à informação de qualidade ou consolidando a informação adquirida através de projetos ou competições.</p>
+    </header>
+    <div class="panel-group" id="main_topics">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#main_topics" href="#main_topics-panel1">
+                <h2 class="panel-title">
+                    Competições
+                </h2>
+            </div>
+            <div id="main_topics-panel1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Falar da maratona, ludum dare e outros(?)...
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#main_topics" href="#main_topics-panel2">
+                <h2 class="panel-title">
+                    Projetos
+                </h2>
+            </div>
+            <div id="main_topics-panel2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Falar de (possiveis) projetos (por enquanto so estamos desenvolvendo a wiki e o site.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#main_topics" href="#main_topics-panel3">
+                <h2 class="panel-title">
+                    Propostas
+                </h2>
+            </div>
+            <div id="main_topics-panel3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Falar das propostas que temos para o futuro (proximo, de preferencia), como a wiki, forum, stackeroverflowIME, gitlab, etc;
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

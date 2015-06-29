@@ -1,0 +1,24 @@
+/* CSS for the IME++ website */
+
+/* I find it awesomely beautiful a page with no
+ * content on the sides when the screen is large */
+.container-fluid {
+    max-width: 1000px;
+}
+
+/* Makes the accordion toggable from
+ * any point of the panel heading */
+.panel-heading {
+    cursor:pointer;
+}
+
+/* Puts nice arrows on the accordion :) */
+.panel-title:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.collapsed .panel-title:after {
+    content:"\e080";
+}
