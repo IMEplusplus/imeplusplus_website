@@ -13,46 +13,7 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                <img style="height:auto; width:auto; max-height:30px;" alt="IME++ Home" src="images/im07.png">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="nav navbar-nav">
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="portifolio.html">Portifólio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Grupos <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="programacao_competitiva.html">Programação Competitiva</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="jogos.html">Desenvolvimento de Jogos</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="sistemas.html">Desenvolvimento de Sistemas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://wiki.imeplusplus.com.br">Wiki</a></li>
-                <li><a href="http://forum.imeplusplus.com.br">Fórum</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div id="navigation"></div>
 
 <!-- Main Content -->
 <main role="main" class="container-fluid">
@@ -69,5 +30,13 @@
 <script src="scripts/jquery-2.1.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="scripts/bootstrap.min.js"></script>
+
+<!-- NavBar -->
+<script>
+$(function() {
+  $('#navigation').load("navbar.html");
+});
+</script>
+
 </body>
 </html>
