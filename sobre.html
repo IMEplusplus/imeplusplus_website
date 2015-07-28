@@ -17,12 +17,11 @@
 
 <!-- Main Content -->
 <main role="main" class="container-fluid">
-    <!--
     <header>
         <img style="max-width: 250px;" class="img-responsive center-block" alt="IME++ Logo" src="images/logo_tr_cn.png">
         <h1 class="text-center"></h1>
     </header>
-    -->
+    <section id="content"></section>
 </main>
 
 <!-- Page footer -->
@@ -36,9 +35,9 @@
 <!-- NavBar -->
 <script>
 $(function() {
-  $('header').load("header.html");
-  $('footer').load("footer.html");
-  $('main').load("contents/sobre.html");
+  $('header:first').load("header.html");
+  $('footer:last').load("footer.html");
+  $('#content').load("contents/sobre.html");
 });
 </script>
 
