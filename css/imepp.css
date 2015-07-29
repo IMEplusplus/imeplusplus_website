@@ -2,8 +2,8 @@
 
 /* I find it awesomely beautiful a page with no
  * content on the sides when the screen is large */
-.container-fluid {
-    max-width: 50%;
+.container {
+    max-width: 80%;
 }
 
 /* Makes the accordion toggable from
