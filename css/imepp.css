@@ -3,7 +3,7 @@
 /* I find it awesomely beautiful a page with no
  * content on the sides when the screen is large */
 .container {
-    max-width: 80%;
+    max-width: 1000px;
 }
 
 /* Makes the accordion toggable from
