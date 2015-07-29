@@ -12,7 +12,7 @@ $(document).ready(function() {
   var path = window.location.pathname;
   path.replace(/^(website\/)/,"")
   if (path == "") {
-      path = "index.html
+      path = "index.html";
   }
   $("nav").load("navbar.html");
   $("footer").load("footer.html");
