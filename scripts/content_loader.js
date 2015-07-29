@@ -10,7 +10,7 @@ function newClickBehavior() {
 
 $(document).ready(function() {
   var path = window.location.pathname;
-  path.replace(/^(\/website\/)/,"");
+  path = path.replace(/^(\/website\/)/,"");
   if (path == "") {
       path = "index.html";
   }
