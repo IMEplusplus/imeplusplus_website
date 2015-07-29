@@ -27,3 +27,8 @@
 body {
     padding-top: 70px;
 }
+
+
+#calendar {
+    min-width: 400px;
+}
