@@ -38,3 +38,23 @@ body {
   text-decoration: none;
   background: #ddd;
 }
+
+a.showcase {
+  display: table;
+  text-align: center;
+}
+
+a.showcase > h2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+a.showcase-sm {
+  height: 130px;
+  width: 100%;
+}
+
+a.showcase-lg {
+  height: 180px;
+  width: 100%;
+}
