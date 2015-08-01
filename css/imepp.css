@@ -34,12 +34,7 @@ body {
 }
 
 .thumbnail:hover {
+  color: black;
   text-decoration: none;
-  background: #EEE;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background: #ddd;
 }
