@@ -139,6 +139,12 @@ footer a {
   padding: 0 0.2em;
 }
 
+/* Bootstrap */
+.collapsing {
+  z-index: -1;
+}
+
+/* MailChimp */
 #mc_embed_signup{
   background:#efefef;
   clear:left;
