@@ -1,3 +1,4 @@
 $('.nav a').on('click', function() {
-    $('.navbar-toggle').click();
+    if ($('.navbar-collapse.in')[0])
+        $('.navbar-toggle').click();
 });
