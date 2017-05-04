@@ -1,0 +1,19 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	root /srv/www;
+
+	index index.html;
+
+	server_name www.imeplusplus.com;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
+
+server {
+	server_name imeplusplus.com;
+	return 301 $scheme://www.imeplusplus.com$request_uri;
+}
